@@ -1,0 +1,17 @@
+{
+  "name": "backend1",
+  "version": "1.0.0",
+  "description": "an api that returns json response after taking input from the request query",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "api",
+    "hng"
+  ],
+  "author": "Oladimeji Amusa (Smartbizlord)",
+  "license": "ISC"
+}
