@@ -1,4 +1,4 @@
-const time = new Date().toISOString()
+const time = new Date().toISOString().split(".")[0] + "Z"
 
 
 
