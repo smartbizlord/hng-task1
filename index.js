@@ -8,6 +8,9 @@ const server = http.createServer((req, res) => {
     const endpointFull= new URL(`http://${req.rawHeaders[hostIndex]}${req.url}`)
     setQuery(endpointFull.searchParams, req)
 
+    res.setHeader("Content-Type", "application/json")
+    res.setHeader("Accept", "application/json")
+
     if (endpointFull.pathname == "/info" && req.method == "GET") {
         // 
         if (req.query?.slack_name == undefined || req.query?.track == undefined) {
