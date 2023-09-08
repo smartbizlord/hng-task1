@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
             const response = {
                 slack_name,
                 current_day,
-                utc_time,
+                utc_time: new Date().toISOString().split(".")[0] + "Z",
                 track,
                 github_file_url: "https://github.com/smartbizlord/hng-task1/blob/main/index.js",
                 github_repo_url: "https://github.com/smartbizlord/hng-task1",
