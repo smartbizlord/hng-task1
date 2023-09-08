@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
     res.setHeader("Content-Type", "application/json")
     res.setHeader("Accept", "application/json")
 
-    if (endpointFull.pathname == "/info" && req.method == "GET") {
+    if (endpointFull.pathname == "/api" && req.method == "GET") {
         // 
         if (req.query?.slack_name == undefined || req.query?.track == undefined) {
             // 
